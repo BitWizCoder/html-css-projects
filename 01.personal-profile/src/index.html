@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="html.png" type="image/x-icon" />
+    <link href="/dist/output.css" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="../lib/fontawesome-free-6.5.1-web/css/all.css"
+    />
+
+    <title>Personal profile</title>
+  </head>
+  <body class="bg-gray-200">
+    <!-- green background -->
+    <div class="bg-green-500 h-[50vh] w-full -z-10 absolute top-0"></div>
+    <!-- White background -->
+    <div class="bg-gray-200 h-[60vh] w-full -z-10 absolute top-[50vh]"></div>
+
+    <!-- Main content -->
+    <div class="flex items-center justify-center md:h-screen my-4">
+      <div
+        class="bg-white shadow-sm rounded-md md:scroll-my-10 w-[90%] md:w-[80%] flex flex-col-reverse lg:flex-row"
+      >
+        <!-- box 1 -->
+        <div class="p-12 flex-1">
+          <h1 class="text-4xl text-gray-700 my-5">Hello i'm Muhammad</h1>
+          <h3 class="text-xl text-gray-700 my-5">Full-Stack Web Developer</h3>
+          <hr />
+          <p class="text-gray-700 my-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia nulla
+            explicabo impedit magni dolorum corrupti eaque laborum fugit
+            accusamus sunt? Nihil consectetur magnam vel explicabo similique.
+            Fugit similique vero neque.
+          </p>
+
+          <!-- Contact Button -->
+          <button
+            class="group relative h-12 overflow-hidden rounded-lg bg-white text-white text-xl shadow py-3 px-5 my-5"
+          >
+            <div
+              class="absolute inset-0 w-3 bg-green-500 transition-all duration-[250ms] ease-out group-hover:w-full"
+            ></div>
+            <a
+              class="relative text-gray-700 group-hover:text-white"
+              href="mailto:mhmdnoman01@gmail.com"
+              ><i class="fa-solid fa-envelope"></i> Get in touch</a
+            >
+          </button>
+
+          <!-- Social icons -->
+          <div class="flex gap-5 text-lg my-6">
+            <a
+              href="https://github.com/mhmdNoman"
+              target="_blank"
+              class="border-2 border-gray-200 py-2 px-3.5 rounded-full text-green-600 transition ease-in-out delay-50 hover:-translate-2 hover:scale-110 duration-300 hover:border-green-500"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              href="https://twitter.com/Nomanux"
+              target="_blank"
+              class="border-2 border-gray-200 py-2 px-3 rounded-full text-green-600 transition ease-in-out delay-50 hover:-translate-2 hover:scale-110 duration-300 hover:border-green-500"
+            >
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UCQKO3t9rMqqM82v_GlAAUpA"
+              target="_blank"
+              class="border-2 border-gray-200 py-2 px-3 rounded-full text-green-600 transition ease-in-out delay-50 hover:-translate-2 hover:scale-110 duration-300 hover:border-green-500"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/mhmdnoman/"
+              target="_blank"
+              class="border-2 border-gray-200 py-2 px-3.5 rounded-full text-green-600 transition ease-in-out delay-50 hover:-translate-2 hover:scale-110 duration-300 hover:border-green-500"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- box 2 -->
+        <div class="photo rounded-r-md lg:flex-1"></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap');
+
+
+
+body {
+    font-family:'Courier New', Courier, monospace;
+}
+
+/* p {
+    font-family: 'Poppins', sans-serif;
+} */
+
+.photo{
+    background-image: url('https://images.unsplash.com/photo-1540569014015-19a7be504e3a');
+    height: 600px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* @apply md:h-[600px] h-80 mt-20 md:mt-0 ; */
+}
+
+
+/*     <div
+      class="absolute grid items-center grid-cols-1 lg:grid-cols-2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white shadow-sm rounded-md my-10 container w-[80%]"
+    > */
