@@ -564,8 +564,9 @@ video {
   z-index: -10;
 }
 
-.m-2 {
-  margin: 0.5rem;
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .my-5 {
@@ -576,33 +577,6 @@ video {
 .my-6 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-}
-
-.my-10 {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-}
-
-.my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.my-4 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.mt-5 {
-  margin-top: 1.25rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
-.mt-2 {
-  margin-top: 0.5rem;
 }
 
 .flex {
@@ -621,10 +595,6 @@ video {
   height: 60vh;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
 .w-3 {
   width: 0.75rem;
 }
@@ -639,11 +609,6 @@ video {
 
 .flex-1 {
   flex: 1 1 0%;
-}
-
-.scroll-my-10 {
-  scroll-margin-top: 2.5rem;
-  scroll-margin-bottom: 2.5rem;
 }
 
 .flex-col-reverse {
@@ -812,23 +777,14 @@ body {
   font-family:'Courier New', Courier, monospace;
 }
 
-/* p {
-    font-family: 'Poppins', sans-serif;
-} */
-
 .photo{
-  background-image: url('https://images.unsplash.com/photo-1540569014015-19a7be504e3a');
+  background-image: url('../src/man-photo.jpeg');
   height: 600px;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* @apply md:h-[600px] h-80 mt-20 md:mt-0 ; */
 }
-
-/*     <div
-      class="absolute grid items-center grid-cols-1 lg:grid-cols-2 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white shadow-sm rounded-md my-10 container w-[80%]"
-    > */
 
 .hover\:scale-110:hover {
   --tw-scale-x: 1.1;
@@ -862,10 +818,6 @@ body {
   .md\:scroll-my-10 {
     scroll-margin-top: 2.5rem;
     scroll-margin-bottom: 2.5rem;
-  }
-
-  .md\:flex-row {
-    flex-direction: row;
   }
 }
 
