@@ -3,36 +3,59 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link href="./dist/output.css" rel="stylesheet" />
 
     <title>Frontend Mentor | Product preview card component</title>
   </head>
   <body class="bg-[#f2ebe3]">
     <div class="flex justify-center items-center h-screen">
-      <div class="flex w-[600px]">
-        <div class="flex-1">
+      <div class="flex flex-col w-[600px] mx-7 md:flex-row">
+        <div class="flex-1 h-auto">
+          <!-- <div
+            class="bg-[url('../images/image-product-mobile.jpg')] md:bg-[url('../images/image-product-desktop.jpg')] w-auto h-full rounded-l-md object-fill"
+          ></div> -->
           <img
             src="./images/image-product-desktop.jpg"
             alt=""
-            class="w-auto rounded-l-md"
+            class="w-auto h-full rounded-l-md"
           />
         </div>
-        <div class="flex-1 bg-white rounded-r-md p-10">
-          <p>Perfume</p>
-          <h1 class="">Gabrielle Essence Eau De Parfum</h1>
-          <p>
+        <div
+          class="flex-1 bg-white rounded-r-md p-10 text-[#1c232b] font-montserrat"
+        >
+          <p class="text-[#6c7289]">Perfume</p>
+          <h1 class="font-fraunces my-4 text-3xl">
+            Gabrielle Essence Eau De Parfum
+          </h1>
+          <p class="mb-4 text-[#6c7289]">
             A floral, solar and voluptuous interpretation composed by Olivier
             Polge, Perfumer-Creator for the House of CHANEL.
           </p>
-          <p>$149.99 $169.99</p>
-          <button>Add to Cart</button>
+
+          <div class="flex items-center gap-4">
+            <p class="font-bold text-4xl text-[#3c8067]">$149.99</p>
+            <p class="text-xs">$169.99</p>
+          </div>
+
+          <button
+            class="bg-[#3c8067] text-white mt-5 py-3 px-16 rounded-md font-bold flex items-center gap-2 hover:bg-[#316b56]"
+          >
+            <img src="./images/icon-cart.svg" alt="" />
+            <p>Add to Cart</p>
+          </button>
         </div>
       </div>
     </div>

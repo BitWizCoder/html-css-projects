@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./index.html", "./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        montserrat: ["Montserrat", "sans-serif"],
+        fraunces: ["Fraunces", "serif"],
+      },
+    },
   },
   plugins: [],
 };
