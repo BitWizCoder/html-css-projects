@@ -3,11 +3,104 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
     <link rel="stylesheet" href="./dist/output.css" />
-    <title>Your Tailwind CSS Website</title>
+    <title>Frontend Mentor | Results summary component</title>
   </head>
 
   <body>
-    <h1 class="text-3xl text-amber-700">Helllo world!</h1>
+    <div class="flex justify-center items-center h-screen">
+      <div class="w-[640px] flex">
+        <!-- Section 1 -->
+        <div
+          class="flex-1 bg-gradient-to-b from-[hsl(252,100%,67%)] to-[hsl(241,81%,54%)] text-white text-center rounded-xl px-10 flex flex-col items-center"
+        >
+          <p class="mt-7 mb-5 text-[hsl(241,100%,89%)] font-bold">
+            Your Result
+          </p>
+
+          <div
+            class="flex items-center justify-center flex-col bg-gradient-to-b from-[hsla(256,72%,46%,1)] to-[hsla(241,72%,46%,0)] rounded-full w-[150px] h-[150px] scroll-pt-32"
+          >
+            <h1 class="text-5xl font-bold">76</h1>
+            <p class="text-sm text-[hsl(241,100%,89%)]">of 100</p>
+          </div>
+
+          <h2 class="text-2xl font-bold my-4">Great</h2>
+
+          <p class="mb-7 text-[hsl(241,100%,89%)]">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+
+        <!-- Section 2 -->
+        <div
+          class="flex-1 px-10 shadow-md shadow-[hsl(221,100%,96%)] rounded-r-xl"
+        >
+          <p class="mt-7 mb-5 text-[hsl(224,30%,27%)] font-bold">Summary</p>
+
+          <div class="flex flex-col gap-4">
+            <div
+              class="flex justify-between bg-[hsla(0,100%,67%,0.2)] px-4 py-2 rounded-md"
+            >
+              <div class="text-[hsl(0,100%,67%)] flex gap-2">
+                <img src="./assets/images/icon-reaction.svg" alt="" />
+                <p>Reaction</p>
+              </div>
+              <p class="text-[hsl(224,30%,27%)]">
+                <span class="font-bold">80</span> / 100
+              </p>
+            </div>
+
+            <div
+              class="flex justify-between bg-[hsla(39,100%,56%,.2)] px-4 py-2 rounded-md"
+            >
+              <div class="text-[hsl(39,100%,56%)] flex gap-2">
+                <img src="./assets/images/icon-memory.svg" alt="" />
+                <p>Memory</p>
+              </div>
+              <p class="text-[hsl(224,30%,27%)]">
+                <span class="font-bold">92</span> / 100
+              </p>
+            </div>
+
+            <div
+              class="flex justify-between bg-[hsla(166,100%,37%,.2)] px-4 py-2 rounded-md"
+            >
+              <div class="text-[hsl(166,100%,37%)] flex gap-2">
+                <img src="./assets/images/icon-verbal.svg" alt="" />
+                <p>Verbal</p>
+              </div>
+              <p class="text-[hsl(224,30%,27%)]">
+                <span class="font-bold">61</span> / 100
+              </p>
+            </div>
+
+            <div
+              class="flex justify-between bg-[hsla(234,85%,45%,.2)] px-4 py-2 rounded-md"
+            >
+              <div class="text-[hsl(234,85%,45%)] flex gap-2">
+                <img src="./assets/images/icon-visual.svg" alt="" />
+                <p>Visual</p>
+              </div>
+              <p class="text-[hsl(224,30%,27%)]">
+                <span class="font-bold">72</span> / 100
+              </p>
+            </div>
+          </div>
+
+          <button
+            class="mt-7 text-center bg-center bg-[hsl(224,30%,27%)] text-[hsl(221,100%,96%)] px-[85px] py-2 rounded-full hover:bg-gradient-to-b from-[hsl(252,100%,67%)] to-[hsl(241,81%,54%)]"
+          >
+            Continue
+          </button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
