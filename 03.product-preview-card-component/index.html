@@ -21,17 +21,12 @@
     <title>Frontend Mentor | Product preview card component</title>
   </head>
   <body class="bg-[#f2ebe3]">
-    <div class="flex justify-center items-center h-screen">
-      <div class="flex flex-col w-[600px] mx-7 md:flex-row">
-        <div class="flex-1 h-auto">
-          <!-- <div
-            class="bg-[url('../images/image-product-mobile.jpg')] md:bg-[url('../images/image-product-desktop.jpg')] w-auto h-full rounded-l-md object-fill"
-          ></div> -->
-          <img
-            src="./images/image-product-desktop.jpg"
-            alt=""
-            class="w-auto h-full rounded-l-md"
-          />
+    <div class="flex justify-center items-center md:h-screen">
+      <div class="flex flex-col w-[600px] mx-7 md:flex-row my-10">
+        <div class="flex-1">
+          <div
+            class="custom-bg-mobile md:custom-bg-desktop rounded-tl-md rounded-tr-md md:rounded-tr-none md:rounded-l-md"
+          ></div>
         </div>
         <div
           class="flex-1 bg-white rounded-r-md p-10 text-[#1c232b] font-montserrat"
