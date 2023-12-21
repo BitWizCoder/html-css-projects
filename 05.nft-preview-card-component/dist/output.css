@@ -570,6 +570,10 @@ video {
   margin-top: 1rem;
 }
 
+.mt-7 {
+  margin-top: 1.75rem;
+}
+
 .flex {
   display: flex;
 }
@@ -626,6 +630,10 @@ video {
   width: 2.5rem;
 }
 
+.flex-col {
+  flex-direction: column;
+}
+
 .items-center {
   align-items: center;
 }
@@ -640,6 +648,10 @@ video {
 
 .gap-2 {
   gap: 0.5rem;
+}
+
+.gap-1 {
+  gap: 0.25rem;
 }
 
 .rounded-md {
@@ -682,6 +694,10 @@ video {
   padding: 1.25rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -703,6 +719,11 @@ video {
 .text-\[hsl\(215\2c 51\%\2c 70\%\)\] {
   --tw-text-opacity: 1;
   color: hsl(215 51% 70% / var(--tw-text-opacity));
+}
+
+.text-\[\#1d2229\] {
+  --tw-text-opacity: 1;
+  color: rgb(29 34 41 / var(--tw-text-opacity));
 }
 
 * {
