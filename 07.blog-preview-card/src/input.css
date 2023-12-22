@@ -7,3 +7,10 @@
 body {
   font-family: "Figtree", sans-serif;
 }
+
+.custom-hover:hover + .bg-div {
+  color: hsl(47, 88%, 63%);
+  cursor: pointer;
+  top: 52%;
+  left: 52%;
+}

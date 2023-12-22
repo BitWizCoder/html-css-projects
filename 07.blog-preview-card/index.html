@@ -22,41 +22,52 @@
       }
     </style>
   </head>
-  <body
-    class="bg-[hsl(47,88%,63%)] text-[hsl(0,0%,7%)] flex flex-col justify-center items-center h-screen"
-  >
+  <body>
     <div
-      class="w-[380px] bg-[hsl(0,0%,100%)] rounded-xl p-4 border border-[hsl(0,0%,7%)]"
+      class="bg-[hsl(47,88%,63%)] text-[hsl(0,0%,7%)] flex flex-col justify-center items-center h-screen relative"
     >
-      <img
-        src="./assets/images/illustration-article.svg"
-        alt=""
-        class="rounded-t-xl w-full"
-      />
-      <div class="">
-        <p
-          class="my-3 font-extrabold bg-[hsl(47,88%,63%)] inline-block rounded-md py-1 px-3"
-        >
-          Learning
-        </p>
-        <p>Published 21 Dec 2023</p>
+      <div
+        class="w-[380px] bg-[hsl(0,0%,100%)] rounded-xl p-4 border border-[hsl(0,0%,7%)] z-10 custom-hover"
+      >
+        <img
+          src="./assets/images/illustration-article.svg"
+          alt=""
+          class="rounded-xl w-full"
+        />
+        <div class="">
+          <p
+            class="my-3 font-extrabold bg-[hsl(47,88%,63%)] inline-block rounded-md py-1 px-3"
+          >
+            Learning
+          </p>
+          <p>Published 21 Dec 2023</p>
 
-        <h1 class="font-extrabold my-3">HTML & CSS foundations</h1>
+          <a
+            href="#"
+            class="font-extrabold my-3 hover:text-[hsl(47,88%,63%)] block title text-2xl"
+          >
+            HTML & CSS foundations
+          </a>
 
-        <p class="text-[hsl(0,0%,50%)]">
-          These languages are the backbone of every website, defining structure,
-          content, and presentation.
-        </p>
+          <p class="text-[hsl(0,0%,50%)]">
+            These languages are the backbone of every website, defining
+            structure, content, and presentation.
+          </p>
 
-        <div class="flex items-center gap-3 mt-4">
-          <img
-            src="./assets/images/image-avatar.webp"
-            alt=""
-            class="w-[50px]"
-          />
-          <p class="font-bold">Greg Hooper</p>
+          <div class="flex items-center gap-3 mt-4">
+            <img
+              src="./assets/images/image-avatar.webp"
+              alt=""
+              class="w-[50px]"
+            />
+            <p class="font-bold">Greg Hooper</p>
+          </div>
         </div>
       </div>
+
+      <div
+        class="w-[380px] h-[507px] rounded-xl bg-[hsl(0,0%,7%)] absolute top-[51%] left-[51%] transform -translate-x-1/2 -translate-y-1/2 bg-div"
+      ></div>
     </div>
   </body>
 </html>
