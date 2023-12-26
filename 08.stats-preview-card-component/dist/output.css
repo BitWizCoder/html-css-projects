@@ -540,11 +540,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .mx-10 {
   margin-left: 2.5rem;
   margin-right: 2.5rem;
@@ -555,28 +550,8 @@ video {
   margin-bottom: 1.25rem;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
-.mb-5 {
-  margin-bottom: 1.25rem;
-}
-
 .mb-10 {
   margin-bottom: 2.5rem;
-}
-
-.mb-1 {
-  margin-bottom: 0.25rem;
-}
-
-.mb-1\.5 {
-  margin-bottom: 0.375rem;
-}
-
-.mb-14 {
-  margin-bottom: 3.5rem;
 }
 
 .mb-12 {
@@ -587,100 +562,12 @@ video {
   display: flex;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
-.h-auto {
-  height: auto;
-}
-
-.h-\[100\] {
-  height: 100;
-}
-
-.h-\[100\%\] {
-  height: 100%;
-}
-
-.h-\[3\] {
-  height: 3;
-}
-
 .h-\[400px\] {
   height: 400px;
 }
 
-.h-\[400p\] {
-  height: 400p;
-}
-
-.h-\[380px\] {
-  height: 380px;
-}
-
-.h-\[350px\] {
-  height: 350px;
-}
-
-.h-\[au\] {
-  height: au;
-}
-
-.h-full {
-  height: 100%;
-}
-
-.h-\[\] {
-  height: ;
-}
-
-.h-\[800px\] {
-  height: 800px;
-}
-
-.h-\[50vh\] {
-  height: 50vh;
-}
-
-.h-\[400\] {
-  height: 400;
-}
-
-.w-60 {
-  width: 15rem;
-}
-
-.w-\[600\] {
-  width: 600;
-}
-
-.w-\[600px\] {
-  width: 600px;
-}
-
-.w-\[800px\] {
-  width: 800px;
-}
-
-.w-\[100px\] {
-  width: 100px;
-}
-
 .w-\[1000px\] {
   width: 1000px;
-}
-
-.w-\[900px\] {
-  width: 900px;
-}
-
-.w-\[400px\] {
-  width: 400px;
-}
-
-.w-auto {
-  width: auto;
 }
 
 .w-full {
@@ -711,52 +598,18 @@ video {
   justify-content: center;
 }
 
-.gap-4 {
-  gap: 1rem;
-}
-
 .gap-10 {
   gap: 2.5rem;
 }
 
-.gap-14 {
-  gap: 3.5rem;
-}
-
-.gap-20 {
-  gap: 5rem;
-}
-
-.gap-28 {
-  gap: 7rem;
-}
-
-.gap-24 {
-  gap: 6rem;
-}
-
-.rounded-md {
-  border-radius: 0.375rem;
-}
-
-.rounded-r-md {
-  border-top-right-radius: 0.375rem;
+.rounded-b-md {
   border-bottom-right-radius: 0.375rem;
-}
-
-.rounded-l-md {
-  border-top-left-radius: 0.375rem;
   border-bottom-left-radius: 0.375rem;
 }
 
 .rounded-t-md {
   border-top-left-radius: 0.375rem;
   border-top-right-radius: 0.375rem;
-}
-
-.rounded-b-md {
-  border-bottom-right-radius: 0.375rem;
-  border-bottom-left-radius: 0.375rem;
 }
 
 .bg-\[hsl\(233\2c 47\%\2c 7\%\)\] {
@@ -774,10 +627,6 @@ video {
   background-color: hsl(277 64% 61% / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\.\/images\/image-header-desktop\.jpg\'\)\] {
-  background-image: url('../images/image-header-desktop.jpg');
-}
-
 .bg-\[url\(\'\.\.\/images\/image-header-mobile\.jpg\'\)\] {
   background-image: url('../images/image-header-mobile.jpg');
 }
@@ -791,37 +640,8 @@ video {
      object-fit: contain;
 }
 
-.object-cover {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .p-10 {
   padding: 2.5rem;
-}
-
-.p-14 {
-  padding: 3.5rem;
-}
-
-.p-48 {
-  padding: 12rem;
-}
-
-.p-16 {
-  padding: 4rem;
-}
-
-.p-5 {
-  padding: 1.25rem;
-}
-
-.p-2 {
-  padding: 0.5rem;
-}
-
-.p-20 {
-  padding: 5rem;
 }
 
 .text-center {
@@ -831,16 +651,6 @@ video {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
-}
-
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
-}
-
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
 }
 
 .text-3xl {
@@ -856,14 +666,14 @@ video {
   text-transform: uppercase;
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .text-\[hsl\(277\2c 64\%\2c 61\%\)\] {
   --tw-text-opacity: 1;
   color: hsl(277 64% 61% / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .bg-blend-multiply {
@@ -887,14 +697,24 @@ video {
     gap: 6rem;
   }
 
+  .md\:rounded-l-md {
+    border-top-left-radius: 0.375rem;
+    border-bottom-left-radius: 0.375rem;
+  }
+
   .md\:rounded-r-md {
     border-top-right-radius: 0.375rem;
     border-bottom-right-radius: 0.375rem;
   }
 
-  .md\:rounded-l-md {
-    border-top-left-radius: 0.375rem;
-    border-bottom-left-radius: 0.375rem;
+  .md\:rounded-t-none {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+
+  .md\:rounded-l-none {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
   }
 
   .md\:bg-\[url\(\'\.\.\/images\/image-header-desktop\.jpg\'\)\] {
