@@ -21,11 +21,13 @@
     <title>Frontend Mentor | 3-column preview card component</title>
   </head>
   <body class="box-border flex justify-center items-center md:h-screen">
-    <div class="mx-6 my-6 md:flex">
-      <div class="bg-[hsl(31,77%,52%)] px-10 py-5 rounded-t-md max-w-[300px]">
-        <img src="./images/icon-sedans.svg" alt="" />
+    <div class="mx-6 my-6 md:flex items-center">
+      <div
+        class="bg-[hsl(31,77%,52%)] p-10 rounded-t-md md:rounded-r-none md:rounded-l-md max-w-[300px] flex flex-col gap-8"
+      >
+        <div><img src="./images/icon-sedans.svg" alt="" /></div>
         <h1
-          class="text-3xl text-[hsl(0,0%,95%)] font-bold font-bigShouldersDisplay my-6"
+          class="text-3xl text-[hsl(0,0%,95%)] font-bold font-bigShouldersDisplay"
         >
           Sedans
         </h1>
@@ -33,17 +35,23 @@
           Choose a sedan for its affordability and excellent fuel economy. Ideal
           for cruising in the city or on your next road trip.
         </p>
-        <button
-          class="bg-[hsl(0,0%,95%)] text-[hsl(31,77%,52%)] px-6 py-3 rounded-full my-6 hover:text-[hsl(0,0%,95%)] hover:bg-transparent border border-[hsl(0,0%,95%)]"
-        >
-          Learn More
-        </button>
+        <div>
+          <button
+            class="bg-[hsl(0,0%,95%)] text-[hsl(31,77%,52%)] px-6 py-3 rounded-full hover:text-[hsl(0,0%,95%)] hover:bg-transparent border border-[hsl(0,0%,95%)]"
+          >
+            Learn More
+          </button>
+        </div>
       </div>
 
-      <div class="bg-[hsl(184,100%,22%)] p-10 max-w-[300px]">
-        <img src="./images/icon-suvs.svg" alt="" />
+      <div
+        class="bg-[hsl(184,100%,22%)] p-10 max-w-[300px] flex flex-col gap-8"
+      >
+        <div>
+          <img src="./images/icon-suvs.svg" alt="" />
+        </div>
         <h1
-          class="text-3xl text-[hsl(0,0%,95%)] font-bold font-bigShouldersDisplay my-6"
+          class="text-3xl text-[hsl(0,0%,95%)] font-bold font-bigShouldersDisplay"
         >
           SUVs
         </h1>
@@ -52,17 +60,23 @@
           for your next family vacation and off-road adventures.
         </p>
 
-        <button
-          class="bg-[hsl(0,0%,95%)] text-[hsl(184,100%,22%)] px-6 py-3 rounded-full my-6 hover:text-[hsl(0,0%,95%)] hover:bg-transparent border border-[hsl(0,0%,95%)]"
-        >
-          Learn More
-        </button>
+        <div>
+          <button
+            class="bg-[hsl(0,0%,95%)] text-[hsl(184,100%,22%)] px-6 py-3 rounded-full hover:text-[hsl(0,0%,95%)] hover:bg-transparent border border-[hsl(0,0%,95%)]"
+          >
+            Learn More
+          </button>
+        </div>
       </div>
 
-      <div class="bg-[hsl(179,100%,13%)] p-10 rounded-b-md max-w-[300px]">
-        <img src="./images/icon-luxury.svg" alt="" />
+      <div
+        class="bg-[hsl(179,100%,13%)] p-10 rounded-b-md md:rounded-b-none md:rounded-r-md max-w-[300px] flex flex-col gap-8"
+      >
+        <div>
+          <img src="./images/icon-luxury.svg" alt="" />
+        </div>
         <h1
-          class="text-3xl text-[hsl(0,0%,95%)] font-bold font-bigShouldersDisplay my-6"
+          class="text-3xl text-[hsl(0,0%,95%)] font-bold font-bigShouldersDisplay"
         >
           Luxury
         </h1>
@@ -71,11 +85,13 @@
           enhanced comfort of a luxury rental and arrive in style.
         </p>
 
-        <button
-          class="bg-[hsl(0,0%,95%)] text-[hsl(179,100%,13%)] px-6 py-3 rounded-full my-6 hover:text-[hsl(0,0%,95%)] hover:bg-transparent border border-[hsl(0,0%,95%)]"
-        >
-          Learn More
-        </button>
+        <div>
+          <button
+            class="bg-[hsl(0,0%,95%)] text-[hsl(179,100%,13%)] px-6 py-3 rounded-full hover:text-[hsl(0,0%,95%)] hover:bg-transparent border border-[hsl(0,0%,95%)]"
+          >
+            Learn More
+          </button>
+        </div>
       </div>
     </div>
   </body>
