@@ -13,19 +13,28 @@
 
     <link rel="stylesheet" href="./dist/output.css" />
 
-    <title>Frontend Mentor | [Challenge Name Here]</title>
+    <title>Frontend Mentor | Testimonials Grid Section</title>
   </head>
   <body class="bg-[hsl(210,46%,95%)]">
     <div class="m-5">
       <!-- Testimonial - 1 -->
-      <div class="bg-[hsl(263,55%,52%)] text-[hsl(0,0%,100%)] rounded-md p-7">
+      <div
+        class="bg-[hsl(263,55%,52%)] text-[hsl(0,0%,100%)] rounded-md p-7 relative"
+      >
         <div class="flex gap-4 items-center mb-6">
+          <div>
+            <img
+              src="./images/bg-pattern-quotation.svg"
+              alt=""
+              class="absolute top-0 right-0"
+            />
+          </div>
           <img
             src="./images/image-daniel.jpg"
             alt=""
             class="rounded-full border border-white"
           />
-          <div>
+          <div class="z-50">
             <p class="font-bold">Daniel Clifford</p>
             <p class="text-[hsla(0,0%,100%,.8)]">Verified Graduate</p>
           </div>
