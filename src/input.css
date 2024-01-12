@@ -2,17 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Card styles */
 
-
-/* .grid {
-    display: flex;
-} */
-
-.card-width {
-    width: 500px;
+.card {
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    width: 400px;
+    padding: 10px;
+    border-radius: 3px;
+    margin: 10px;
 }
 
 
 .img-width {
     width: 400px;
+}
+
+.title {
+    color: rgb(28, 32, 34);
+    font-size: 1.4rem;
+    margin: 8px 0;
 }
