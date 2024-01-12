@@ -12,9 +12,11 @@ function displayPorjects(projects) {
                     </div>
                     <div class="project-info">
                         <h2 class="title">${project.title}</h2>
-                        <p>${project.description}</p>
+                        <p class="description">${project.description}</p>
+                        <div class="btns">
                         <a href=${project.live} target="_blank" class="btn btn-preview">Preview</a>
                         <a href=${project.github} target="_blank" class="btn btn-preview">Code</a>
+                        </div>
                     </div>`;
 
     projectGrid.appendChild(projectItem);

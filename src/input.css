@@ -2,23 +2,73 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Card styles */
+/* header-title 7
+   ----------------------------- */
+.header-title h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+  color: #222;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 
-.card {
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
-    width: 400px;
-    padding: 10px;
-    border-radius: 3px;
-    margin: 10px;
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  grid-template-rows: 27px 0;
+  grid-gap: 20px;
+  align-items: center;
 }
 
+.header-title h1:after,
+.header-title h1:before {
+  content: " ";
+  display: block;
+  border-bottom: 1px solid green;
+  border-top: 1px solid green;
+  height: 5px;
+  background-color: #f8f8f8;
+}
+
+/* Card styles */
+.card {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  width: 400px;
+  /* padding: 10px 10px 0px 10px; */
+  /* padding: 10px; */
+  border-radius: 3px;
+  margin: 10px;
+}
 
 .img-width {
-    width: 400px;
+  width: 400px;
 }
 
 .title {
-    color: rgb(28, 32, 34);
-    font-size: 1.4rem;
-    margin: 8px 0;
+  color: rgb(28, 32, 34);
+  font-size: 1.4rem;
+  /* margin: 8px 0; */
+}
+
+.description {
+  flex-grow: 1;
+}
+
+.project-info {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  padding: 10px 10px 0px 10px;
+}
+
+/* Buttons */
+.btns {
+  margin-top: auto;
+}
+
+.btn {
+  background-color: goldenrod;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 2px;
+  margin-right: 25px;
 }
