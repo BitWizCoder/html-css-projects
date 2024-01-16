@@ -13,62 +13,104 @@
       <!-- Container -->
       <div class="flex gap-32 items-center">
         <!-- Illustration -->
-        <div class="w-[350px] bg-[] shadow-md p-4">
+        <div class="w-[380px] bg-[] shadow-2xl p-4 rounded-xl">
           <!-- Avatar -->
-          <div
-            class="flex items-center gap-3 bg-[hsl(264,100%,61%)] text-[hsl(0,0%,100%)]"
-          >
-            <div>
-              <img
-                src="./images/avatar.jpg"
-                alt=""
-                class="rounded-full w-10 border-black"
-              />
-            </div>
-            <div>
-              <h2>Samuel Green</h2>
-              <p>Available to Walk</p>
+
+          <div class="relative">
+            <!-- avatar shape -->
+            <div
+              class="bg-white w-[180px] h-[25px] rounded-b-2xl absolute left-0 right-0 m-auto"
+            ></div>
+
+            <!-- avatar contents -->
+            <div
+              class="flex items-center gap-3 pb-4 pt-10 px-5 rounded-b-md rounded-t-3xl bg-gradient-to-r from-[hsl(264,100%,61%)] to-[hsl(293,100%,63%)] text-[hsl(0,0%,100%)]"
+            >
+              <div>
+                <img
+                  src="./images/avatar.jpg"
+                  alt=""
+                  class="rounded-full w-10 border border-white"
+                />
+              </div>
+              <div>
+                <h2>Samuel Green</h2>
+                <p class="text-[hsl(276,100%,81%)]">Available to Walk</p>
+              </div>
             </div>
           </div>
 
-          <div class="p-3 bg-[hsl(270,20%,96%)]">
+          <div class="p-3 bg-[hsl(276,55%,96%)]">
             <!-- Chat - 1 -->
-            <div>
-              <p>That sounds great. I’d be happy with that.</p>
-              <p>Could you send over some pictures of your dog, please?</p>
+            <div class="text-[hsl(276,55%,52%)] flex gap-3 flex-col mb-3">
+              <p class="bg-[hsl(276,55%,90%)] rounded-xl p-4 w-60">
+                That sounds great. I’d be happy with that.
+              </p>
+              <p class="bg-[hsl(276,55%,90%)] rounded-xl p-4 w-60">
+                Could you send over some pictures of your dog, please?
+              </p>
             </div>
 
             <!-- Chat - 2 -->
-            <div>
+            <div class="flex flex-col">
               <div class="flex gap-4 justify-end">
                 <img
                   src="./images/dog-image-1.jpg"
                   alt=""
-                  class="w-16 rounded-lg"
+                  class="w-14 rounded-2xl"
                 />
                 <img
                   src="./images/dog-image-2.jpg"
                   alt=""
-                  class="w-16 rounded-lg"
+                  class="w-14 rounded-2xl"
                 />
                 <img
                   src="./images/dog-image-3.jpg"
                   alt=""
-                  class="w-16 rounded-lg"
+                  class="w-14 rounded-2xl"
                 />
               </div>
-              <p>Here are a few pictures. She’s a happy girl!</p>
-              <p>Can you make it?</p>
+
+              <div
+                class="text-[hsl(270,7%,44%)] flex gap-3 flex-col items-end mt-3"
+              >
+                <p class="bg-[hsl(0,0%,100%)] rounded-xl p-4 w-60">
+                  Here are a few pictures. She’s a happy girl!
+                </p>
+                <p class="bg-[hsl(0,0%,100%)] rounded-xl p-4 w-60">
+                  Can you make it?
+                </p>
+              </div>
             </div>
 
             <!-- Chat - 3 -->
             <div>
-              <p>
+              <p class="bg-[hsl(276,55%,90%)] rounded-xl p-4 w-60 mt-3">
                 She looks so happy! The time we discussed works. How long shall
                 I take her out for?
               </p>
-              <p>30 minute walk $29</p>
-              <p>1 hour walk $49</p>
+
+              <!-- Price - 1 -->
+              <div
+                class="flex justify-between my-3 p-3 rounded-2xl rounded-bl-md text-[hsl(0,0%,100%)] bg-gradient-to-r from-[hsl(293,100%,63%)] to-[hsl(264,100%,61%)] w-[265px]"
+              >
+                <div class="flex gap-3">
+                  <div class="w-5 h-5 border border-white rounded-full"></div>
+                  <p>30 minute walk</p>
+                </div>
+                <p class="font-bold">$29</p>
+              </div>
+
+              <!-- Price - 2 -->
+              <div
+                class="flex justify-between my-3 p-3 rounded-2xl rounded-bl-md text-[hsl(0,0%,100%)] bg-gradient-to-r from-[hsl(293,100%,63%)] to-[hsl(264,100%,61%)] w-[265px]"
+              >
+                <div class="flex gap-3">
+                  <div class="w-5 h-5 border border-white rounded-full"></div>
+                  <p>1 hour walk</p>
+                </div>
+                <p class="font-bold">$49</p>
+              </div>
             </div>
 
             <!-- Chat input -->
