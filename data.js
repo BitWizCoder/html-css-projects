@@ -19,6 +19,8 @@ const names = [
   "09.3-column-preview-card-component",
   "10.testimonials-grid-section",
   "11.social-proof-section",
+  "12.single-price-grid-component",
+  "13.chat-app-css-illustration",
 ];
 
 const projectData = [
@@ -129,6 +131,26 @@ const projectData = [
       "next is a landing page template for saas. It is responsive and built with Bootstrap, Html and SaSS",
     live: `${liveUrl}${names[10]}`,
     github: `${github}${names[10]}`,
+    id: "6",
+    tag: "saas",
+  },
+  {
+    img: `project-images/${names[11]}.png`,
+    title: `${names[11]}`,
+    description:
+      "next is a landing page template for saas. It is responsive and built with Bootstrap, Html and SaSS",
+    live: `${liveUrl}${names[11]}`,
+    github: `${github}${names[11]}`,
+    id: "6",
+    tag: "saas",
+  },
+  {
+    img: `project-images/${names[12]}.png`,
+    title: `${names[12]}`,
+    description:
+      "next is a landing page template for saas. It is responsive and built with Bootstrap, Html and SaSS",
+    live: `${liveUrl}${names[12]}`,
+    github: `${github}${names[12]}`,
     id: "6",
     tag: "saas",
   },
