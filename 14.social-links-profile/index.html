@@ -4,191 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./dist/output.css" />
-    <title>Your Tailwind CSS Website</title>
-    <style>
-      body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      }
-
-      .container {
-        max-width: 960px;
-        margin: 0 auto;
-      }
-
-      .nav {
-        background-color: #3498db;
-        padding: 1rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: #fff;
-      }
-
-      .hero {
-        background-color: #2c3e50;
-        color: #fff;
-        text-align: center;
-        padding: 4rem 0;
-      }
-
-      .features {
-        background-color: #ecf0f1;
-        padding: 4rem 0;
-      }
-
-      .footer {
-        background-color: #34495e;
-        color: #fff;
-        text-align: center;
-        padding: 1rem 0;
-      }
-
-      .button {
-        display: inline-block;
-        padding: 10px 20px;
-        font-size: 16px;
-        background-color: #3498db;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 5px;
-        transition: background-color 0.3s;
-      }
-
-      .button:hover {
-        background-color: #2980b9;
-      }
-    </style>
+    <title>Social links profile</title>
   </head>
 
-  <body>
-    <!-- Navigation -->
-    <nav class="nav">
-      <div class="container flex justify-between">
-        <div class="text-xl font-bold font-mono">Your Website</div>
-        <ul style="list-style: none; display: flex; gap: 1rem">
-          <li>
-            <a href="#" style="color: #fff; text-decoration: none">Home</a>
-          </li>
-          <li>
-            <a href="#" style="color: #fff; text-decoration: none">About</a>
-          </li>
-          <li>
-            <a href="#" style="color: #fff; text-decoration: none">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <!-- Hero Section -->
-    <section class="container my-12">
-      <div style="text-align: center">
-        <h2 style="font-size: 2rem; margin-bottom: 2rem">Get the Template</h2>
-        <p style="font-size: 1.25rem; margin-bottom: 2rem">
-          Explore the code on GitHub and use it for your projects.
-        </p>
-        <div style="margin-bottom: 2rem">
-          <a
-            href="https://github.com/xdevimran/Tailwind-CSS-Starter-Template"
-            target="_blank"
-            class="button"
-            style="margin-right: 1rem"
-            >View on GitHub</a
-          >
-          <button id="copyButton" class="button">Copy GitHub Link</button>
-        </div>
-        <p
-          id="copiedMessage"
-          style="font-size: 1rem; color: #27ae60; display: none"
-        >
-          GitHub link copied to clipboard!
-        </p>
-      </div>
-    </section>
+  <body class="bg-[hsl(0,0%,8%)] text-[hsl(0,0%,100%)]">
+    <!-- Outer Container -->
+    <div class="flex items-center justify-center h-screen mt-14 mb-14 md:m-0">
+      <!-- Container -->
+      <div
+        class="flex items-center flex-col bg-[hsl(0,0%,12%)] w-[400px] p-8 rounded-md"
+      >
+        <img
+          src="./assets/images/avatar-jessica.jpeg"
+          alt=""
+          class="rounded-full w-[80px] mb-8"
+        />
+        <h1 class="text-3xl mb-2">Jessica Randall</h1>
+        <p class="text-[hsl(75,94%,57%)]">London, United Kingdom</p>
+        <p class="my-8">"Front-end developer and avid reader."</p>
 
-    <!-- Features Section -->
-    <section class="features">
-      <div class="container">
-        <h2 style="font-size: 2rem; text-align: center; margin-bottom: 2rem">
-          Key Features
-        </h2>
-        <div style="display: flex; justify-content: space-around">
-          <div
-            style="
-              flex: 1;
-              background-color: #fff;
-              padding: 2rem;
-              border-radius: 8px;
-              margin: 1rem;
-            "
+        <!-- Social Links -->
+        <div class="flex flex-col gap-3 w-full">
+          <button
+            class="bg-[hsl(0,0%,20%)] w-full block p-3 rounded-md cursor-pointer hover:bg-[hsl(75,94%,57%)] hover:text-[hsl(0,0%,8%)]"
           >
-            <h3 style="font-size: 1.5rem; margin-bottom: 1rem">
-              Responsive Design
-            </h3>
-            <p>
-              Build websites that look great on any device with responsive
-              design principles.
-            </p>
-          </div>
-          <div
-            style="
-              flex: 1;
-              background-color: #fff;
-              padding: 2rem;
-              border-radius: 8px;
-              margin: 1rem;
-            "
+            Github
+          </button>
+          <button
+            class="bg-[hsl(0,0%,20%)] w-full block p-3 rounded-md cursor-pointer hover:bg-[hsl(75,94%,57%)] hover:text-[hsl(0,0%,8%)]"
           >
-            <h3 style="font-size: 1.5rem; margin-bottom: 1rem">
-              Easy Customization
-            </h3>
-            <p>
-              Customize your website easily with Tailwind CSS and our starter
-              template.
-            </p>
-          </div>
-          <div
-            style="
-              flex: 1;
-              background-color: #fff;
-              padding: 2rem;
-              border-radius: 8px;
-              margin: 1rem;
-            "
+            Frontend Mentor
+          </button>
+          <button
+            class="bg-[hsl(0,0%,20%)] w-full block p-3 rounded-md cursor-pointer hover:bg-[hsl(75,94%,57%)] hover:text-[hsl(0,0%,8%)]"
           >
-            <h3 style="font-size: 1.5rem; margin-bottom: 1rem">
-              Fast Development
-            </h3>
-            <p>
-              Save time and accelerate your project setup with our optimized
-              template.
-            </p>
-          </div>
+            LinkedIn
+          </button>
+          <button
+            class="bg-[hsl(0,0%,20%)] w-full block p-3 rounded-md cursor-pointer hover:bg-[hsl(75,94%,57%)] hover:text-[hsl(0,0%,8%)]"
+          >
+            Twitter
+          </button>
+          <button
+            class="bg-[hsl(0,0%,20%)] w-full block p-3 rounded-md cursor-pointer hover:bg-[hsl(75,94%,57%)] hover:text-[hsl(0,0%,8%)]"
+          >
+            Instagram
+          </button>
         </div>
       </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <p>&copy; 2023 Your Tailwind CSS Website. All rights reserved.</p>
-    </footer>
-
-    <!-- Copy to Clipboard Script -->
-    <script>
-      document
-        .getElementById("copyButton")
-        .addEventListener("click", function () {
-          var gitLink =
-            "https://github.com/xdevimran/Tailwind-CSS-Starter-Template";
-          var textarea = document.createElement("textarea");
-          textarea.value = gitLink;
-          document.body.appendChild(textarea);
-          textarea.select();
-          document.execCommand("copy");
-          document.body.removeChild(textarea);
-          document.getElementById("copiedMessage").style.display = "block";
-          setTimeout(function () {
-            document.getElementById("copiedMessage").style.display = "none";
-          }, 3000);
-        });
-    </script>
+    </div>
   </body>
 </html>
