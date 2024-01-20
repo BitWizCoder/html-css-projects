@@ -4,191 +4,205 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./dist/output.css" />
-    <title>Your Tailwind CSS Website</title>
-    <style>
-      body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      }
-
-      .container {
-        max-width: 960px;
-        margin: 0 auto;
-      }
-
-      .nav {
-        background-color: #3498db;
-        padding: 1rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: #fff;
-      }
-
-      .hero {
-        background-color: #2c3e50;
-        color: #fff;
-        text-align: center;
-        padding: 4rem 0;
-      }
-
-      .features {
-        background-color: #ecf0f1;
-        padding: 4rem 0;
-      }
-
-      .footer {
-        background-color: #34495e;
-        color: #fff;
-        text-align: center;
-        padding: 1rem 0;
-      }
-
-      .button {
-        display: inline-block;
-        padding: 10px 20px;
-        font-size: 16px;
-        background-color: #3498db;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 5px;
-        transition: background-color 0.3s;
-      }
-
-      .button:hover {
-        background-color: #2980b9;
-      }
-    </style>
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>Clipboard landing page</title>
   </head>
 
-  <body>
-    <!-- Navigation -->
-    <nav class="nav">
-      <div class="container flex justify-between">
-        <div class="text-xl font-bold font-mono">Your Website</div>
-        <ul style="list-style: none; display: flex; gap: 1rem">
-          <li>
-            <a href="#" style="color: #fff; text-decoration: none">Home</a>
-          </li>
-          <li>
-            <a href="#" style="color: #fff; text-decoration: none">About</a>
-          </li>
-          <li>
-            <a href="#" style="color: #fff; text-decoration: none">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <!-- Hero Section -->
-    <section class="container my-12">
-      <div style="text-align: center">
-        <h2 style="font-size: 2rem; margin-bottom: 2rem">Get the Template</h2>
-        <p style="font-size: 1.25rem; margin-bottom: 2rem">
-          Explore the code on GitHub and use it for your projects.
-        </p>
-        <div style="margin-bottom: 2rem">
-          <a
-            href="https://github.com/xdevimran/Tailwind-CSS-Starter-Template"
-            target="_blank"
-            class="button"
-            style="margin-right: 1rem"
-            >View on GitHub</a
-          >
-          <button id="copyButton" class="button">Copy GitHub Link</button>
-        </div>
-        <p
-          id="copiedMessage"
-          style="font-size: 1rem; color: #27ae60; display: none"
-        >
-          GitHub link copied to clipboard!
-        </p>
-      </div>
-    </section>
+  <body class="text-[hsl(210,10%,33%)]">
+    <!-- Header Section -->
+    <div
+      class="flex flex-col items-center bg-[url(../images/bg-header-mobile.png)] md:bg-[url(../images/bg-header-desktop.png)] bg-no-repeat bg-cover text-center"
+    >
+      <img src="./images/logo.svg" alt="" class="mt-24 w-[80px]" />
+      <h1 class="font-bold text-3xl mt-10 ml-6 mr-6 md:ml-0 md:mr-0">
+        A history of everything you copy
+      </h1>
+      <p class="md:w-[600px] mt-2 ml-6 mr-6 md:ml-0 md:mr-0">
+        Clipboard allows you to track and organize everything you copy.
+        Instantly access your clipboard on all your devices.
+      </p>
 
-    <!-- Features Section -->
-    <section class="features">
-      <div class="container">
-        <h2 style="font-size: 2rem; text-align: center; margin-bottom: 2rem">
-          Key Features
-        </h2>
-        <div style="display: flex; justify-content: space-around">
-          <div
-            style="
-              flex: 1;
-              background-color: #fff;
-              padding: 2rem;
-              border-radius: 8px;
-              margin: 1rem;
-            "
-          >
-            <h3 style="font-size: 1.5rem; margin-bottom: 1rem">
-              Responsive Design
-            </h3>
-            <p>
-              Build websites that look great on any device with responsive
-              design principles.
+      <div class="text-white mt-10 mb-10 flex flex-col md:flex-row gap-5">
+        <button
+          class="bg-[hsl(171,66%,44%)] py-3 px-5 rounded-full shadow-md shadow-[hsl(171,66%,30%)]"
+        >
+          Download for iOS
+        </button>
+        <button
+          class="bg-[hsl(233,100%,69%)] py-3 px-5 rounded-full shadow-md shadow-[hsl(233,100%,60%)]"
+        >
+          Download for Mac
+        </button>
+      </div>
+    </div>
+
+    <!-- Keep Track Section -->
+    <div class="flex flex-col items-center text-center mt-24">
+      <h1 class="font-bold text-3xl mt-10 ml-6 mr-6 md:ml-0 md:mr-0">
+        Keep track of your snippets
+      </h1>
+      <p class="md:w-[600px] mt-2 ml-6 mr-6 md:ml-0 md:mr-0">
+        Clipboard instantly stores any item you copy in the cloud, meaning you
+        can access your snippets immediately on all your devices. Our Mac and
+        iOS apps will help you organize everything.
+      </p>
+
+      <!--  -->
+      <div
+        class="flex flex-col md:flex-row justify-center items-center gap-20 mt-20"
+      >
+        <img
+          src="./images/image-computer.png"
+          alt=""
+          class="md:-ml-48 ml-10 mr-10 w-[90%] md:w-full"
+        />
+        <div class="flex flex-col text-left gap-14">
+          <div class="text-center md:text-left">
+            <h2 class="text-xl font-bold mb-1">Quick Search</h2>
+            <p class="md:w-96 ml-6 mr-6 md:ml-0 md:mr-0">
+              Easily search your snippets by content, category, web address,
+              application, and more.
             </p>
           </div>
-          <div
-            style="
-              flex: 1;
-              background-color: #fff;
-              padding: 2rem;
-              border-radius: 8px;
-              margin: 1rem;
-            "
-          >
-            <h3 style="font-size: 1.5rem; margin-bottom: 1rem">
-              Easy Customization
-            </h3>
-            <p>
-              Customize your website easily with Tailwind CSS and our starter
-              template.
+          <div class="text-center md:text-left">
+            <h2 class="text-xl font-bold mb-1">iCloud Sync</h2>
+            <p class="md:w-96 ml-6 mr-6 md:ml-0 md:mr-0">
+              Instantly saves and syncs snippets across all your devices.
             </p>
           </div>
-          <div
-            style="
-              flex: 1;
-              background-color: #fff;
-              padding: 2rem;
-              border-radius: 8px;
-              margin: 1rem;
-            "
-          >
-            <h3 style="font-size: 1.5rem; margin-bottom: 1rem">
-              Fast Development
-            </h3>
-            <p>
-              Save time and accelerate your project setup with our optimized
-              template.
+          <div class="text-center md:text-left">
+            <h2 class="text-xl font-bold mb-1">Complete History</h2>
+            <p class="md:w-96 ml-6 mr-6 md:ml-0 md:mr-0">
+              Retrieve any snippets from the first moment you started using the
+              app.
             </p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+
+    <!-- Access Section -->
+    <div class="flex flex-col items-center text-center mt-24">
+      <h1 class="font-bold text-3xl mt-10 ml-6 mr-6 md:ml-0 md:mr-0">
+        Access Clipboard anywhere
+      </h1>
+      <p class="md:w-[600px] mt-2 ml-6 mr-6 md:ml-0 md:mr-0">
+        Whether you’re on the go, or at your computer, you can access all your
+        Clipboard snippets in a few simple clicks.
+      </p>
+      <img src="./images/image-devices.png" alt="" class="mt-24" />
+    </div>
+
+    <!-- Supercharge Section -->
+    <div class="flex flex-col items-center text-center my-24">
+      <h1 class="font-bold text-3xl mt-10 ml-6 mr-6 md:ml-0 md:mr-0">
+        Supercharge your workflow
+      </h1>
+      <p class="md:w-[600px] mt-2 ml-6 mr-6 md:ml-0 md:mr-0">
+        We’ve got the tools to boost your productivity.
+      </p>
+
+      <!-- Features -->
+      <div
+        class="flex flex-col flex-wrap justify-center md:flex-row text-center gap-10 mt-14"
+      >
+        <div class="flex flex-col gap-5 items-center">
+          <img src="./images/icon-blacklist.svg" alt="" class="h-[32px]" />
+          <h2 class="text-lg font-bold ml-6 mr-6 md:ml-0 md:mr-0">
+            Create blacklists
+          </h2>
+          <p class="md:w-96 ml-6 mr-6 md:ml-0 md:mr-0">
+            Ensure sensitive information never makes its way to your clipboard
+            by excluding certain sources.
+          </p>
+        </div>
+        <div class="flex flex-col gap-5 items-center">
+          <img src="./images/icon-text.svg" alt="" />
+          <h2 class="text-lg font-bold ml-6 mr-6 md:ml-0 md:mr-0">
+            Plain text snippets
+          </h2>
+          <p class="md:w-96 ml-6 mr-6 md:ml-0 md:mr-0">
+            Remove unwanted formatting from copied text for a consistent look.
+          </p>
+        </div>
+        <div class="flex flex-col gap-5 items-center">
+          <img src="./images/icon-preview.svg" alt="" />
+          <h2 class="text-lg font-bold ml-6 mr-6 md:ml-0 md:mr-0">
+            Sneak preview
+          </h2>
+          <p class="md:w-96 ml-6 mr-6 md:ml-0 md:mr-0">
+            Quick preview of all snippets on your Clipboard for easy access.
+          </p>
+        </div>
+      </div>
+
+      <!-- Companies -->
+      <div
+        class="flex flex-col md:flex-row items-center flex-wrap justify-center gap-20 md:gap-28 mt-24"
+      >
+        <img src="./images/logo-google.png" alt="" />
+        <img src="./images/logo-ibm.png" alt="" />
+        <img src="./images/logo-microsoft.png" alt="" />
+        <img src="./images/logo-hp.png" alt="" />
+        <img src="./images/logo-vector-graphics.png" alt="" />
+      </div>
+    </div>
+
+    <!-- Download Section -->
+    <div class="flex flex-col items-center text-center my-32">
+      <h1 class="font-bold text-3xl mt-10 ml-6 mr-6 md:ml-0 md:mr-0">
+        Clipboard for iOS and Mac OS
+      </h1>
+      <p class="md:w-[600px] mt-2 ml-6 mr-6 md:ml-0 md:mr-0">
+        Available for free on the App Store. Download for Mac or iOS, sync with
+        iCloud and you’re ready to start adding to your clipboard.
+      </p>
+
+      <div class="text-white mt-10 mb-10 flex flex-col md:flex-row gap-5">
+        <button
+          class="bg-[hsl(171,66%,44%)] py-3 px-5 rounded-full shadow-md shadow-[hsl(171,66%,30%)]"
+        >
+          Download for iOS
+        </button>
+        <button
+          class="bg-[hsl(233,100%,69%)] py-3 px-5 rounded-full shadow-md shadow-[hsl(233,100%,60%)]"
+        >
+          Download for Mac
+        </button>
+      </div>
+    </div>
 
     <!-- Footer -->
-    <footer class="footer">
-      <p>&copy; 2023 Your Tailwind CSS Website. All rights reserved.</p>
-    </footer>
-
-    <!-- Copy to Clipboard Script -->
-    <script>
-      document
-        .getElementById("copyButton")
-        .addEventListener("click", function () {
-          var gitLink =
-            "https://github.com/xdevimran/Tailwind-CSS-Starter-Template";
-          var textarea = document.createElement("textarea");
-          textarea.value = gitLink;
-          document.body.appendChild(textarea);
-          textarea.select();
-          document.execCommand("copy");
-          document.body.removeChild(textarea);
-          document.getElementById("copiedMessage").style.display = "block";
-          setTimeout(function () {
-            document.getElementById("copiedMessage").style.display = "none";
-          }, 3000);
-        });
-    </script>
+    <div
+      class="bg-[hsl(201,11%,98%)] flex flex-col md:flex-row gap-10 md:justify-around items-center py-16"
+    >
+      <div>
+        <img src="./images/logo.svg" alt="" class="w-20" />
+      </div>
+      <div
+        class="flex flex-col md:flex-row text-center md:text-left gap-4 md:gap-14"
+      >
+        <div class="flex flex-col gap-6">
+          <a href="">FAQs</a>
+          <a href="">Contact Us</a>
+        </div>
+        <div class="flex flex-col gap-6">
+          <a href="">Privacy Policy</a>
+          <a href="">Press Kit</a>
+        </div>
+        <div class="flex flex-col gap-6">
+          <a href="">Install Guide</a>
+        </div>
+      </div>
+      <div class="flex items-center gap-6">
+        <img src="./images/icon-facebook.svg" alt="" />
+        <img src="./images/icon-twitter.svg" alt="" />
+        <img src="./images/icon-instagram.svg" alt="" />
+      </div>
+    </div>
   </body>
 </html>
