@@ -4,191 +4,167 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./dist/output.css" />
-    <title>Your Tailwind CSS Website</title>
-    <style>
-      body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      }
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-      .container {
-        max-width: 960px;
-        margin: 0 auto;
-      }
-
-      .nav {
-        background-color: #3498db;
-        padding: 1rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: #fff;
-      }
-
-      .hero {
-        background-color: #2c3e50;
-        color: #fff;
-        text-align: center;
-        padding: 4rem 0;
-      }
-
-      .features {
-        background-color: #ecf0f1;
-        padding: 4rem 0;
-      }
-
-      .footer {
-        background-color: #34495e;
-        color: #fff;
-        text-align: center;
-        padding: 1rem 0;
-      }
-
-      .button {
-        display: inline-block;
-        padding: 10px 20px;
-        font-size: 16px;
-        background-color: #3498db;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 5px;
-        transition: background-color 0.3s;
-      }
-
-      .button:hover {
-        background-color: #2980b9;
-      }
-    </style>
+    <title>Frontend Mentor | Huddle landing page with curved sections</title>
   </head>
 
   <body>
-    <!-- Navigation -->
-    <nav class="nav">
-      <div class="container flex justify-between">
-        <div class="text-xl font-bold font-mono">Your Website</div>
-        <ul style="list-style: none; display: flex; gap: 1rem">
-          <li>
-            <a href="#" style="color: #fff; text-decoration: none">Home</a>
-          </li>
-          <li>
-            <a href="#" style="color: #fff; text-decoration: none">About</a>
-          </li>
-          <li>
-            <a href="#" style="color: #fff; text-decoration: none">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <!-- Hero Section -->
-    <section class="container my-12">
-      <div style="text-align: center">
-        <h2 style="font-size: 2rem; margin-bottom: 2rem">Get the Template</h2>
-        <p style="font-size: 1.25rem; margin-bottom: 2rem">
-          Explore the code on GitHub and use it for your projects.
-        </p>
-        <div style="margin-bottom: 2rem">
-          <a
-            href="https://github.com/xdevimran/Tailwind-CSS-Starter-Template"
-            target="_blank"
-            class="button"
-            style="margin-right: 1rem"
-            >View on GitHub</a
-          >
-          <button id="copyButton" class="button">Copy GitHub Link</button>
-        </div>
-        <p
-          id="copiedMessage"
-          style="font-size: 1rem; color: #27ae60; display: none"
+    <!-- Container -->
+    <div class="">
+      <!-- Nav -->
+      <div class="container mx-auto flex justify-between py-10">
+        <img src="./images/logo.svg" alt="" />
+        <a
+          href=""
+          class="text-[hsl(322,100%,66%)] border border-[hsl(322,100%,66%)] rounded-full px-4 py-2"
+          >Try it free</a
         >
-          GitHub link copied to clipboard!
-        </p>
       </div>
-    </section>
 
-    <!-- Features Section -->
-    <section class="features">
-      <div class="container">
-        <h2 style="font-size: 2rem; text-align: center; margin-bottom: 2rem">
-          Key Features
+      <!-- Hero -->
+      <div class="flex flex-col items-center text-[hsl(192,100%,9%)] mt-20">
+        <h2 class="text-3xl font-bold my-6">
+          Build The Community Your Fans Will Love
         </h2>
-        <div style="display: flex; justify-content: space-around">
-          <div
-            style="
-              flex: 1;
-              background-color: #fff;
-              padding: 2rem;
-              border-radius: 8px;
-              margin: 1rem;
-            "
-          >
-            <h3 style="font-size: 1.5rem; margin-bottom: 1rem">
-              Responsive Design
-            </h3>
-            <p>
-              Build websites that look great on any device with responsive
-              design principles.
+        <p class="w-[450px] text-center mb-10">
+          Huddle re-imagines the way we build communities. You have a voice, but
+          so does your audience. Create connections with your users as you
+          engage in genuine discussion.
+        </p>
+        <a
+          href="#"
+          class="bg-[hsl(322,100%,66%)] text-[hsl(207,100%,98%)] font-bold px-6 py-3 rounded-full mb-16"
+          >Get Started For Free</a
+        >
+        <img src="./images/screen-mockups.svg" alt="" />
+
+        <!-- Stats -->
+        <div class="flex gap-72 my-28">
+          <div>
+            <img src="./images/icon-communities.svg" alt="" class="w-[35px]" />
+            <h1 class="text-5xl font-bold">1.4k+</h1>
+            <p class="mt-4 opacity-[.55]">Communities Formed</p>
+          </div>
+          <div>
+            <img src="./images/icon-messages.svg" alt="" class="w-[35px]" />
+            <h1 class="text-5xl font-bold">2.7m+</h1>
+            <p class="mt-4 opacity-[.55]">Messages Sent</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Grow Together -->
+      <div class="relative bg-[hsl(207,100%,98%)] my-24">
+        <div class="container mx-auto flex items-center">
+          <div class="flex-1">
+            <h1 class="text-3xl font-bold my-6">Grow Together</h1>
+            <p class="w-[500px]">
+              Generate meaningful discussions with your audience and build a
+              strong, loyal community. Think of the insightful conversations you
+              miss out on with a feedback form.
             </p>
           </div>
-          <div
-            style="
-              flex: 1;
-              background-color: #fff;
-              padding: 2rem;
-              border-radius: 8px;
-              margin: 1rem;
-            "
-          >
-            <h3 style="font-size: 1.5rem; margin-bottom: 1rem">
-              Easy Customization
-            </h3>
-            <p>
-              Customize your website easily with Tailwind CSS and our starter
-              template.
-            </p>
+          <div class="flex-1">
+            <img src="./images/illustration-grow-together.svg" alt="" />
           </div>
-          <div
-            style="
-              flex: 1;
-              background-color: #fff;
-              padding: 2rem;
-              border-radius: 8px;
-              margin: 1rem;
-            "
-          >
-            <h3 style="font-size: 1.5rem; margin-bottom: 1rem">
-              Fast Development
-            </h3>
-            <p>
-              Save time and accelerate your project setup with our optimized
-              template.
+        </div>
+
+        <img
+          src="./images/bg-section-top-desktop-1.svg"
+          alt=""
+          class="absolute -top-36 -z-10 w-full"
+        />
+        <img
+          src="./images/bg-section-bottom-desktop-1.svg"
+          alt=""
+          class="absolute -bottom-32 -z-10 w-full"
+        />
+      </div>
+
+      <!-- Conversations -->
+      <div class="py-28">
+        <div class="container mx-auto flex items-center gap-48">
+          <div class="flex-1">
+            <img src="./images/illustration-flowing-conversation.svg" alt="" />
+          </div>
+          <div class="flex-1">
+            <h1 class="text-3xl font-bold my-6">Flowing Conversations</h1>
+            <p class="w-[500px]">
+              You wouldn't paginate a conversation in real life, so why do it
+              online? Our threads have just-in-time loading for a more natural
+              flow.
             </p>
           </div>
         </div>
       </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <p>&copy; 2023 Your Tailwind CSS Website. All rights reserved.</p>
-    </footer>
+      <!-- Users -->
+      <div class="relative bg-[hsl(207,100%,98%)] my-24">
+        <div class="container mx-auto flex items-center">
+          <div class="flex-1">
+            <h1 class="text-3xl font-bold my-6">Your Users</h1>
+            <p class="w-[500px]">
+              It takes no time at all to integrate Huddle with your app's
+              authentication solution. This means, once signed in to your app,
+              your users can start chatting immediately.
+            </p>
+          </div>
+          <div class="flex-1">
+            <img src="./images/illustration-your-users.svg" alt="" />
+          </div>
+        </div>
 
-    <!-- Copy to Clipboard Script -->
-    <script>
-      document
-        .getElementById("copyButton")
-        .addEventListener("click", function () {
-          var gitLink =
-            "https://github.com/xdevimran/Tailwind-CSS-Starter-Template";
-          var textarea = document.createElement("textarea");
-          textarea.value = gitLink;
-          document.body.appendChild(textarea);
-          textarea.select();
-          document.execCommand("copy");
-          document.body.removeChild(textarea);
-          document.getElementById("copiedMessage").style.display = "block";
-          setTimeout(function () {
-            document.getElementById("copiedMessage").style.display = "none";
-          }, 3000);
-        });
-    </script>
+        <img
+          src="./images/bg-section-top-desktop-1.svg"
+          alt=""
+          class="absolute -top-36 -z-10 w-full"
+        />
+        <img
+          src="./images/bg-section-bottom-desktop-1.svg"
+          alt=""
+          class="absolute -bottom-32 -z-10 w-full"
+        />
+      </div>
+
+      <!-- Get Started -->
+      <div class="flex flex-col items-center justify-center">
+        <h1></h1>
+        <h1 class="text-3xl font-bold my-6">Ready To Build Your Community?</h1>
+        <a
+          href="#"
+          class="bg-[hsl(322,100%,66%)] text-[hsl(207,100%,98%)] font-bold px-6 py-3 rounded-full mb-16"
+          >Get Started For Free</a
+        >
+      </div>
+
+      <!-- Footer -->
+      <div class="relative bg-[hsl(192,100%,9%)] my-24">
+        <div class="container mx-auto flex items-center">
+          <div class="flex-1">
+            <div class="flex">
+              <img
+                src="./images/icon-messages.svg"
+                alt=""
+                class="fill-blue-500"
+              />
+              <h1 class="font-bold text-2xl text-white">HUDDLE</h1>
+            </div>
+          </div>
+          <div class="flex-1"></div>
+        </div>
+
+        <img
+          src="./images/bg-footer-top-desktop.svg"
+          alt=""
+          class="absolute -top-36 -z-10 w-full"
+        />
+      </div>
+    </div>
   </body>
 </html>
