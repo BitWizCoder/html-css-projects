@@ -144,26 +144,59 @@
       </div>
 
       <!-- Footer -->
-      <div class="relative bg-[hsl(192,100%,9%)] my-24">
-        <div class="container mx-auto flex items-center">
+      <div
+        class="bg-[hsl(192,100%,20%)] text-white mt-24 relative before:content-[url('../images/bg-footer-top-desktop.svg')] before:absolute before:-top-[155px] before:bg-cover"
+      >
+        <div class="container mx-auto flex justify-between py-20">
           <div class="flex-1">
-            <div class="flex">
+            <div class="flex mb-4">
               <img
-                src="./images/icon-messages.svg"
+                src="./images/icon-messages-white.svg"
                 alt=""
                 class="fill-blue-500"
               />
-              <h1 class="font-bold text-2xl text-white">HUDDLE</h1>
+              <h1 class="font-bold text-4xl text-white">HUDDLE</h1>
+            </div>
+            <p class="mb-4 w-80">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+              nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.
+            </p>
+            <div class="flex mb-4 gap-4 items-center">
+              <img src="./images/icon-phone.svg" alt="" />
+              <p>Phone: +1-543-123-4567</p>
+            </div>
+            <div class="flex mb-4 gap-4 items-center">
+              <img src="./images/icon-email.svg" alt="" />
+              <p>example@huddle.com</p>
+            </div>
+
+            <div class="flex gap-5 mt-16">
+              <img src="./images/icon-facebook.svg" alt="" />
+              <img src="./images/icon-instagram.svg" alt="" />
+              <img src="./images/icon-twitter.svg" alt="" />
             </div>
           </div>
-          <div class="flex-1"></div>
+          <div class="flex-1">
+            <h2 class="text-3xl font-bold mb-4">Newsletter</h2>
+            <p class="w-80 mb-8">
+              To recieve tips on how to grow your community, sign up to our
+              weekly newsletter. We’ll never send you spam or pass on your email
+              address
+            </p>
+            <div class="flex gap-6">
+              <input type="text" class="p-2 w-80 rounded-md text-gray-800" />
+              <button class="bg-[hsl(322,100%,66%)] rounded-md py-2 px-10">
+                Subscribe
+              </button>
+            </div>
+          </div>
         </div>
 
-        <img
+        <!-- <img
           src="./images/bg-footer-top-desktop.svg"
           alt=""
           class="absolute -top-36 -z-10 w-full"
-        />
+        /> -->
       </div>
     </div>
   </body>
